@@ -1,0 +1,70 @@
+/* 기본 스타일 초기화 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Pretendard', sans-serif; /* 폰트는 취향껏 변경 가능 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+    transition: background-color 0.5s;
+}
+
+/* 메인 컨테이너 */
+.container {
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* 버튼 스타일 */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* 연결 완료 시 표시할 스타일 클래스 */
+body.connected-bg {
+    background-color: #e3f2fd; /* 연결되면 배경색을 연한 파랑으로 변경 */
+}
+
+.icon {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* 숨김 처리를 위한 유틸리티 클래스 */
+.hidden {
+    display: none;
+}
